@@ -11,6 +11,8 @@ Install all the dependencies
 ```
 pip install -r requirements.txt 
 ```
+Download the music dataset from the following [link](https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification) and place the "Music-Genere" folder inside the repo folder
+
 Run this command
 ```
 streamlit run demo_multiple.py
