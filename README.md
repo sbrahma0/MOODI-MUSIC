@@ -2,7 +2,7 @@
 ## A system which identifies huuman emotion from an image and suggests music
 
 ### Workflow/UML Diagram
-![image](results/work flow.png)
+![image](results/work_flow.png)
 
 ### Setup Instructions
 Clone this repository and get in it
