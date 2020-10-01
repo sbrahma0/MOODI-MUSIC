@@ -1,5 +1,21 @@
 # MOODI-MUSIC
+## A system which identifies huuman emotion from an image and suggests music
 
-[![Build Status](https://travis-ci.org/sbrahma0/MOODI-MUSIC.svg?branch=master)](https://travis-ci.org/sbrahma0/MOODI-MUSIC.svg?branch=master)
+### Setup Instructions
+Clone this repository and get in it
+```
+git clone https://github.com/sbrahma0/MOODI-MUSIC.git
+cd ./MOODI-MUSIC
+```
+Install all the dependencies
+```
+pip install -r requirements.txt 
+```
+Run this command
+```
+streamlit run demo_multiple.py
+```
+If the browser doesnt not open automatically, copy and paste the web address shown in the terminal.
 
+Once you are in the browser, upload an image and have fun 
 
