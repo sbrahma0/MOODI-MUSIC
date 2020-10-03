@@ -85,7 +85,7 @@ class emoMusic():
         return np.array(images), img_org
 
     def helper(self,gener):
-        st.button("Rerecommend")
+        st.button("Re-recommend")
 
         rand_genere = random.choice(gener)[0]
 
@@ -163,11 +163,9 @@ class emoMusic():
 def main():
     emoMusic_v1 = emoMusic()
     pred=[]
-    #options=["3"]
-    #choice = st.selectbox("Selct picture",options)
 
     st.title('Moodi Music - A system to suggest music according to your mood')
- 
+    st.text("**********  Please do not upload images with face mask, else you will be sad *************")
     file = st.file_uploader("Upload a picture", type=["jpg"])
 
     st.sidebar.text("Filters")
