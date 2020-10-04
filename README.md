@@ -1,7 +1,9 @@
 # MOODI-MUSIC
 ## A system which identifies huuman emotion from an image and suggests music
 
-### Workflow/UML Diagram
+On a highlevel this project uses human emotion and music genere dataset to develop a web app that identifies human emotion and recommend music so that users dont have to manually create music playlist.
+
+### Workflow Diagram
 ![image](results/work_flow.png)
 
 ### Setup Instructions
@@ -26,3 +28,5 @@ If the browser doesnt not open automatically, copy and paste the web address sho
 
 Once you are in the browser, upload an image and have fun 
 
+## About Me
+#### ACADEMIC JOURNEY - Bachelors in Mechatronics Engineering -> Masters in Robotics -> Perception and AI enthusiast
