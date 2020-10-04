@@ -29,4 +29,5 @@ If the browser doesnt not open automatically, copy and paste the web address sho
 Once you are in the browser, upload an image and have fun 
 
 ## About Me
-#### ACADEMIC JOURNEY - Bachelors in Mechatronics Engineering -> Masters in Robotics -> Perception and AI enthusiast
+#### ACADEMIC JOURNEY
+Bachelors in Mechatronics Engineering  >  Masters in Robotics  >  Perception and AI enthusiast
