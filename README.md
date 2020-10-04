@@ -14,7 +14,9 @@ Install all the dependencies
 ```
 pip install -r requirements.txt 
 ```
-Download the music dataset from the following [link](https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification) and place the "Music-Genere" folder inside the repo folder
+Download the Emotion recognition model from the following [link](https://drive.google.com/file/d/19su4fmTbqQkLQxQiV1vhOO1zTMQgClc1/view?usp=sharing) and save it in the repository.
+
+Download the music dataset from the following [link](https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification) and place the "Music-Genere" folder inside the repo folder.
 
 Run this command
 ```
