@@ -27,11 +27,10 @@ from keras.callbacks import ModelCheckpoint
 from matplotlib import pyplot as plt
 from sklearn.metrics import confusion_matrix
 import itertools
-%matplotlib inline
 
-from model.model import emo_Model
+from model.model import custom_model as cm
 
-data= pd.read_csv('FER - EMOTION/fer2013.csv')
+data= pd.read_csv('../FER - EMOTION/fer2013.csv')
 
 emotion_labels = ["Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"]
 classes=np.array(("Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"))
@@ -81,15 +80,15 @@ train_flow = datagen.flow(X_train, y_train, batch_size=batch_size)
 val_flow = testgen.flow(X_val, y_val, batch_size=batch_size) 
 tes_flow = testgen.flow(X_test, y_test, batch_size=batch_size) 
 
-model = emo_Model()
+model = cm.emo_Model()
 opt = Adam(lr=0.0001, decay=1e-6)
 model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy']) 
 
-filepath="model1_weights_min_loss.h5"
+filepath="model1_weights_min_loss_for_test.h5"
 checkpoint = ModelCheckpoint(filepath, monitor='val_loss', verbose=1, save_best_only=True, mode='min')
 callbacks_list = [checkpoint]
 
-num_epochs = 200 # we iterate 200 times over the entire training set 
+num_epochs = 1 # we iterate 200 times over the entire training set 
 history = model.fit(train_flow, 
                     steps_per_epoch=len(X_train) / batch_size, 
                     epochs=num_epochs,  
@@ -98,4 +97,4 @@ history = model.fit(train_flow,
                     validation_data=val_flow,  
                     validation_steps=len(X_val) / batch_size) 
 
-model.save('emo_model_v1.h5') 
+model.save('emo_model_for_test.h5') 
