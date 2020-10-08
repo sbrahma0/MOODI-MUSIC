@@ -3,6 +3,8 @@
 
 On a highlevel this project uses human emotion and music genere dataset to develop a web app that identifies human emotion and recommend music so that users dont have to manually create music playlist.
 
+To use the web app please go the following link [http://54.225.231.32:8501/](http://54.225.231.32:8501/)
+
 ### Workflow Diagram
 ![image](results/work_flow.png)
 
