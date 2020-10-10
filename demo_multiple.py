@@ -9,8 +9,6 @@ from matplotlib import pyplot
 import pandas as pd
 import random
 import glob
-import librosa
-import IPython.display as ipd
 
 import keras.backend.tensorflow_backend as tb
 tb._SYMBOLIC_SCOPE.value = True
@@ -102,12 +100,10 @@ class emoMusic():
         audio_list=[]
 
         for i in range(choice):
-            #y, sr = librosa.load(sample+li[i][0],sr=5000, offset=0.0, duration=30)
             y = open(sample+li[i][0],'rb')
             audio_list.append(y)
 
         for i in audio_list:
-            #ipd.display(ipd.Audio(i,rate=7000))
             aud_fil = i.read()
             st.audio(aud_fil)
 
