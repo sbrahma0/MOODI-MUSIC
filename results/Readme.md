@@ -1,3 +1,3 @@
 ## Technical details 
 ### Workflow Diagram
-![image](workflow.PNG)
+![image](work_flow.PNG)
