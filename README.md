@@ -21,7 +21,7 @@ NVIDIA GPU
 Cuda 10.0
 ```
 ### 3rd Party Python Package
-MTCNN Python package is a deep learning Face recognition library. It should be noted that versions of MTCNN, Tensorflow and OpenCV are very specificaly compatable. If the versions are not followed there can un-wanted errors.
+MTCNN Python package is a deep learning Face recognition library. It should be noted that versions of MTCNN, Tensorflow and OpenCV are very specifically compatable. If the versions are not followed there can un-wanted errors.
 
 ### Setup Instructions
 Downloading the required folders and package installations can take a while, depending on the system and internet speed.
