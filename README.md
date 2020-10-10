@@ -8,6 +8,11 @@ To use the web app please go the following link [http://54.225.231.32:8501/](htt
 ### Workflow Diagram
 ![image](results/work_flow.png)
 
+### Requirements
+```
+NVIDIA GPU
+Cuda 10.0
+```
 ### Setup Instructions
 Clone this repository and get in it
 ```
