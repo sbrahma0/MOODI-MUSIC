@@ -3,7 +3,7 @@
 ![image](work_flow.png)
 
 ### Significance of MTCNN
-![image](MTCNN.png)
+![image](MTCNN.PNG)
 
 ### Custom Convolutional Neural Network
-![image](CNN.png)
+![image](CNN.PNG)
