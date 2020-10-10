@@ -15,10 +15,12 @@ If you have trouble with the above mentioned links, please send an email at sbra
 ![image](results/Simple_workflow.PNG)
 
 ### Requirements
+If you plan to train your own model then you will need the GPU driver and cuda toolkit, else to deploy the app you do not need.
 ```
 NVIDIA GPU
 Cuda 10.0
 ```
+### 3rd Party Python Package
 MTCNN Python package is a deep learning Face recognition library. It should be noted that versions of MTCNN, Tensorflow and OpenCV are very specificaly compatable. If the versions are not followed there can un-wanted errors.
 
 ### Setup Instructions
