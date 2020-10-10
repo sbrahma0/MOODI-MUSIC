@@ -8,7 +8,7 @@ To use the web app please go the following link [http://54.225.231.32:8501/](htt
 If you have trouble with the above mentioned link, please send an email at sbrahma0@gmail.com
 
 ### Workflow Diagram
-![image](results/work_flow.png)
+![image](results/Simple_workflow.PNG)
 
 ### Requirements
 ```
