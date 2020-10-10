@@ -1,6 +1,8 @@
 # MOODI-MUSIC
 ## A system which identifies huuman emotion from an image and suggests music
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 On a highlevel this project uses human emotion and music genere dataset to develop a web app that identifies human emotion and recommend music so that users dont have to manually create music playlist.
 
 To use the web app please go the following link [http://54.225.231.32:8501/](http://54.225.231.32:8501/)
@@ -55,3 +57,13 @@ python train.py
 ## About Me
 #### ACADEMIC JOURNEY
 Bachelors in Mechatronics Engineering  >  Masters in Robotics  >  Perception and AI enthusiast
+
+
+### Copyright <2020> <Sayan Brahma>
+```
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
