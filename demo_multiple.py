@@ -210,5 +210,6 @@ def main():
  
         emoMusic_v1.emo_to_music(checkbox_recommeded_music_genere, detected_emo)
 
+# If condition is not needed in Python 3    
 main()
 
