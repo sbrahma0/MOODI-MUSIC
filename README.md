@@ -47,8 +47,7 @@ If the browser doesnt not open automatically, copy and paste the web address sho
 Once you are in the browser, upload an image and have fun 
 
 ### Optional Docker Setup
-The Docker will install tensorflow-gpu, MTCNN and will occupy 3.5 GB of disk space. Installation of cuda drivers are recommended.
-Please make sure the model and the music file from GTZAN is added in the repository folder. Downloading the required folders and making the docker image can take a while, depending on the system and internet speed.
+The Docker will install tensorflow, MTCNN and will occupy 3.5 GB of disk space.Please make sure the model and the music file from GTZAN is added in the repository folder. Downloading the required folders and making the docker image can take a while, depending on the system and internet speed.
 ```
 docker build -t moodi_music .
 docker run -p 8501:8501 moodi_music
