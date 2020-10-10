@@ -1,1 +1,3 @@
-### Technical details 
+## Technical details 
+### Workflow Diagram
+![image](workflow.PNG)
