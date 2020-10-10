@@ -3,6 +3,16 @@
 # pull miniconda image
 FROM python:3.7.6
 
+RUN mkdir -p /root/.streamlit
+RUN bash -c 'echo -e "\
+[general]\n\
+email = \"\"\n\
+" > /root/.streamlit/credentials.toml'
+RUN bash -c 'echo -e "\
+[server]\n\
+enableCORS = false\n\
+" > /root/.streamlit/config.toml'
+
 # copy local files into container
 COPY demo_multiple.py /tmp/
 COPY requirements.txt /tmp/
