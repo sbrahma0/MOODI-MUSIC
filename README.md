@@ -45,6 +45,12 @@ Please make sure the model and the music file from GTZAN is added in the reposit
 docker build -t moodi_music .
 docker run -p 8501:8501 moodi_music
 ```
+### Training the model
+Download FER2013 dataset from the [link](https://www.kaggle.com/deadskull7/fer2013), keep it inside the repository folder and run the following command.
+```
+python train.py
+```
+
 
 ## About Me
 #### ACADEMIC JOURNEY
