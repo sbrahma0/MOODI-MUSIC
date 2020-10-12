@@ -107,7 +107,10 @@ class emoMusic():
             aud_fil = i.read()
             st.audio(aud_fil)
 
-    def emo_to_music(self,checkbox_recommeded_music_genere, emotion = "Happy"):
+    def emo_to_music(self,checkbox_recommeded_music_genere, dislike_checkboxes, emotion = "Happy"):
+
+        genre_display = []
+        gener_string = " "
         
         pop = glob.glob("pop.csv")
         country = glob.glob("country.csv")
@@ -122,30 +125,39 @@ class emoMusic():
         
         if emotion == "Happy":
             gener = [country,disco,pop,hiphop]
-            gener_string = "country, disco, pop, hiphop"
+            #gener_string = "country, disco, pop, hiphop"
         elif emotion == "Sad":
             gener = [blues,jazz,classical]
-            gener_string = "blues, jazz, classical"
+            #gener_string = "blues, jazz, classical"
         elif emotion == "Angry":
             gener = [metal,rock]
-            gener_string = "metal, rock"
+            #gener_string = "metal, rock"
         elif emotion == "Disgust":
             gener = [raggae,metal,rock]
-            gener_string = "raggae, metal, rock"
+            #gener_string = "raggae, metal, rock"
         elif emotion == "Fear":
             gener = [blues,jazz,classical,metal,rock]
-            gener_string = "blues, jazz, classical, metal, rock"
+            #gener_string = "blues, jazz, classical, metal, rock"
         elif emotion == "Surprise":
             gener = [disco,hiphop]
-            gener_string = "disco, hiphop"
+            #gener_string = "disco, hiphop"
         elif emotion == "Neutral":
             gener = [metal,rock]
-            gener_string = "metal, rock"
-        
+            #gener_string = "metal, rock"
 
+        gener = [ele for ele in gener if ele[0][:-4] not in dislike_checkboxes]
+   
+        if gener == []:
+            st.text("Sorry we could not recommed you any songs, Please try again")
+            return
+        
+        for i in gener:
+            genre_display.append(i[0][0:-4])
+        
+        gener_string = ' '.join([str(elem[0][0:-4]) for elem in gener])
 
         if checkbox_recommeded_music_genere:
-            st.text("Recommeded Generes are "+gener_string)
+            st.text("Recommeded Generes for you are "+gener_string)
 
         self.helper(gener)
 
@@ -159,9 +171,12 @@ class emoMusic():
 def main():
     emoMusic_v1 = emoMusic()
     pred=[]
-
+    
     st.title('Moodi Music - A system to suggest music according to your mood')
     st.text("**********  Please do not upload images with face mask, else you will be sad *************")
+
+    dislike_checkboxes = st.multiselect("Disliked Genres", ["country", "disco", "pop", "hiphop", "blues", "jazz", "classical", "metal", "rock", "raggae"], default=None)
+
     file = st.file_uploader("Upload a picture", type=["jpg"])
 
     st.sidebar.text("Filters")
@@ -173,7 +188,7 @@ def main():
     
     print(checkbox_org_img,checkbox_face_detected,checkbox_face_individual,checkbox_recommeded_music_genere)
 
-
+    
     if file is not None:
         st.spinner(text='In progress...')
         faceimages, faceimages_org = emoMusic_v1.pre_process(file, checkbox_face_detected, checkbox_org_img)
@@ -204,8 +219,7 @@ def main():
         else:
             st.text("The person in the picture seems to be- "+detected_emo)
  
-        emoMusic_v1.emo_to_music(checkbox_recommeded_music_genere, detected_emo)
+        emoMusic_v1.emo_to_music(checkbox_recommeded_music_genere, dislike_checkboxes, detected_emo)
 
 # If condition is not needed in Python 3    
 main()
-
