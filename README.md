@@ -7,7 +7,9 @@ On a highlevel this project uses human emotion and music genere dataset to devel
 
 To use the web app please go the following link [http://54.225.231.32:8501/](http://54.225.231.32:8501/)
 
-Demo Video with all edge cases [Link](https://youtu.be/SDyF7e0Yg-g)
+Presentation [Link](https://youtu.be/y5wbqn-9GaU)
+
+Web App Demo Video [Link](https://youtu.be/SDyF7e0Yg-g)
 
 If you have trouble with the above mentioned links, please send an email at sbrahma0@gmail.com
 
